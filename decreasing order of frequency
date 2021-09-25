@@ -1,0 +1,10 @@
+inp=input("enter ")
+d={}
+for i in inp:
+    if i in d:
+        d[i]+=1
+    else:
+        d[i]=1
+sort=sorted(d,key=d.get,reverse=True)
+for r in sort:
+    print(r,":",d[r])
